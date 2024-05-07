@@ -1,0 +1,46 @@
+
+### 저장
+POST http://localhost:8080/customers
+Content-Type: application/json
+
+{
+  "id": 212,
+  "address" : "인천",
+  "name" : "길동"
+}
+
+### 수정
+PUT http://localhost:8080/customers
+Content-Type: application/json
+
+{
+  "id": 1,
+  "address" : "인천11111",
+  "name" : "홍길동"
+}
+
+### 조회
+GET http://localhost:8080/customers/122
+Content-Type: application/json
+
+### 조회 이름
+GET http://localhost:8080/customers?name=홍길동
+Content-Type: application/json
+
+### 조회 이름
+GET http://localhost:8080/customers/홍길동
+Content-Type: application/json
+
+### 조회 이름 lke 검색
+GET http://localhost:8080/customers/search?name=홍
+Content-Type: application/json
+
+### 조회 이름 lke 검색 mapper
+GET http://localhost:8080/customers/searchMapper?name=홍길
+Content-Type: application/json
+
+### 삭제
+DELETE http://localhost:8080/customers/1
+Content-Type: application/json
+
+
