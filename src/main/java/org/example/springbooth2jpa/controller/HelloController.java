@@ -4,5 +4,6 @@ public class HelloController {
 
     public void test(){
         System.out.println("test");
+        System.out.println("test1");
     }
 }
